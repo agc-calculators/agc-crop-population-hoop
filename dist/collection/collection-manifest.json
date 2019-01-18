@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-crop-population-hoop",
+      "dependencies": [],
+      "componentClass": "AgcCropPopulationHoop",
+      "componentPath": "components/agc-crop-population-hoop/agc-crop-population-hoop.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-crop-population-hoop-inputs",
+      "dependencies": [],
+      "componentClass": "AgcCropPopulationHoopInputs",
+      "componentPath": "components/agc-corn-population-hoop-inputs/agc-corn-population-hoop-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-crop-population-hoop-progress",
+      "dependencies": [],
+      "componentClass": "AgcCropPopulationHoopProgress",
+      "componentPath": "components/agc-crop-population-hoop-progress/agc-crop-population-hoop-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-crop-population-hoop-results",
+      "dependencies": [],
+      "componentClass": "AgcCropPopulationHoopResults",
+      "componentPath": "components/agc-crop-population-hoop-results/agc-crop-population-hoop-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-crop-population-hoop-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcCropPopulationHoopResultsPlaceholder",
+      "componentPath": "components/agc-crop-population-hoop-results-placeholder/agc-crop-population-hoop-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
